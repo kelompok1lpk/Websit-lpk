@@ -110,7 +110,7 @@ def halaman_4():
             "mayones": "mayones vegan (tanpa telur), campuran tofu + mustard + lemonTahu sutra + lemon",}
       
         hasil = pengganti.get(bahan.lower(), "bahan yang kamu cari ga ada nih, cari yang lain yuk")
-        st.success(f"Pengganti untuk *{bahan}*: {hasil}")
+        st.success(f"pengganti untuk *{bahan}*: {hasil}")
 
         
     col1, col2 = st.columns(2)
