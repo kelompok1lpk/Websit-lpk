@@ -94,7 +94,7 @@ def halaman_4():
     st.title("Butuh Pengganti Bahan?")
     st.markdown("Masukkan bahan yang ingin diganti, nanti kita bantu kasih alternatifnya!")
 
-    bahan = st.text_input("Contoh: susu, telur, daging, keju, dll")
+    bahan = st.text_input("contoh: susu, telur, daging, keju, dll")
     if bahan:
         pengganti = {
             "susu": "susu almond / oat milk",
@@ -120,8 +120,8 @@ def halaman_4():
         st.session_state.page += 1
 
 def halaman_5():
-    st.title("Thank you for visiting our website!!")
-    st.markdown("^^Semoga VeggieBites bisa selalu membantumu yaa^^")
+    st.title("thank you for visiting our website!!")
+    st.markdown("^^semoga veggiebites bisa selalu membantumu yaa^^")
     col1, col2 = st.columns(2)
     if col1.button("Back"):
         st.session_state.page -= 1
