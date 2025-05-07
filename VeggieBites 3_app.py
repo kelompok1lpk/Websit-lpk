@@ -94,7 +94,10 @@ def halaman_4():
     st.title("Butuh Pengganti Bahan?")
     st.markdown("Masukkan bahan yang ingin diganti, nanti kita bantu kasih alternatifnya!")
 
-    bahan = st.text_input("contoh: susu, telur, daging, keju, dll")
+    with st.form("form_pengganti"):
+    bahan = st.text_input("Contoh: susu, telur, daging, keju, dll")
+    cari = st.form_submit_button("Cari Pengganti")
+    
     if bahan:
         pengganti = {
             "susu": "susu almond / oat milk",
@@ -105,7 +108,7 @@ def halaman_4():
             "daging giling": "kacang hitam, kacang merah, walnut cincang, tahu hancur",
             "susu sapi": "susu almond, susu kedelai, oat milk, coconut milk, cashew milk",
             "keju cheddar/parmesan": "keju nabati dari kacang mete, nutritional yeast (untuk rasa cheesy)",
-            "cream cheese": "tahu sutra + lemon + garam (di-blend)telur",
+            "cream cheese": "tahu sutra + lemon + garam (di-blend)",
             "mentega": "minyak kelapa, margarin vegan, alpukat",
             "mayones": "mayones vegan (tanpa telur), campuran tofu + mustard + lemonTahu sutra + lemon",}
       
